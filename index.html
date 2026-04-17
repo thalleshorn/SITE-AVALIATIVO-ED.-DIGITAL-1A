@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rota do Café Paranaense | História e Sabor</title>
+  <meta name="description" content="Explore a jornada do café no Paraná: da Capital Mundial do Café aos cafés especiais premiados.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="a11y-bar" aria-label="Controles de Acessibilidade">
+    <div class="container a11y-flex">
+      <div class="font-controls">
+        <span>Tamanho do Texto:</span>
+        <button id="btn-decrease-font" aria-label="Diminuir fonte">A-</button>
+        <button id="btn-increase-font" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <button id="btn-contrast" aria-label="Alternar alto contraste">Modo de Contraste</button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Ouro Verde <span>PR</span></div>
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#cidades">A Rota</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#curiosidades">História</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero reveal">
+      <div class="container">
+        <h1>A Rota do Café Paranaense</h1>
+        <p>Conheça a herança do grão que transformou o Paraná em uma potência econômica e cultural.</p>
+        <a href="#cidades" class="btn-primary">Descobrir o Roteiro</a>
+      </div>
+    </section>
+
+    <section id="cidades" class="section-padding reveal">
+      <div class="container">
+        <h2>Destinos em Destaque</h2>
+        <div id="cities-grid" class="grid-layout">
+          </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="section-padding bg-alt reveal">
+      <div class="container">
+        <h2>Imagens do Campo e da Xícara</h2>
+        <div class="carousel-wrapper" aria-roledescription="carousel">
+          <button id="carousel-prev" class="carousel-btn" aria-label="Anterior">❮</button>
+          <div class="carousel-track-container">
+            <ul id="carousel-track" class="carousel-track">
+              <li class="carousel-slide current-slide">
+                <img src="https://images.unsplash.com/photo-1596541223130-5d56447ceec3?auto=format&fit=crop&w=1200&q=80" alt="Grãos de café maduros em um galho">
+              </li>
+              <li class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1551030173-122aabc4489c?auto=format&fit=crop&w=1200&q=80" alt="Sacas de café armazenadas">
+              </li>
+              <li class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1511556820780-d912e42b4980?auto=format&fit=crop&w=1200&q=80" alt="Barista preparando café especial">
+              </li>
+            </ul>
+          </div>
+          <button id="carousel-next" class="carousel-btn" aria-label="Próximo">❯</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="curiosidades" class="section-padding reveal">
+      <div class="container">
+        <h2>Fatos Históricos</h2>
+        <div id="accordion-container" class="accordion">
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Rota do Café Paranaense. Projeto Educativo sobre UX e Acessibilidade.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
